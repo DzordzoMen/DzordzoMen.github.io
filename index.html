@@ -413,7 +413,7 @@
 
 				<div class="yui-u">
 					<div class="contact-info">
-						<!-- <h3><a id="pdf" href="#">Download PDF</a></h3> -->
+						<h3><a id="pdf" href="#">Download PDF</a></h3>
 						<h3><strong>Email:</strong><a href="mailto:romanowski.maciej8@gmail.com">romanowski.maciej8@gmail.com</a></h3>
 						<h3><strong>City: </strong>Cracow</h3>
 					</div><!--// .contact-info -->
@@ -654,6 +654,9 @@ Personal Data Protection Act as of 29 August 1997, consolidated text: Journal of
 
 </div><!--// doc -->
 
+<script>
+	document.querySelector('#pdf').addEventListener('click', () => window.print());
+</script>
 
 </body>
 </html>
