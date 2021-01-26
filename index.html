@@ -354,7 +354,7 @@
 		a { color: #990003 }
 		a:hover { text-decoration: none; }
 		strong { font-weight: bold; }
-		li { line-height: 24px; border-bottom: 1px solid #ccc; }
+		li { line-height: 24px; width: 95%; border-bottom: 1px solid #ccc; }
 		p.enlarge { font-size: 144%; padding-right: 6.5em; line-height: 24px; }
 		p.enlarge span { color: #000 }
 		.contact-info { margin-top: 7px; }
@@ -375,7 +375,6 @@
 		.job li span { font-size: 152%; display: block; margin-bottom: -2px; padding: 0 }
 
 		.last { border: none; }
-		.skills-list {  }
 		.skills-list ul { margin: 0; }
 		.skills-list li { margin: 3px 0; padding: 3px 0; }
 		.skills-list li span { font-size: 152%; display: block; margin-bottom: -2px; padding: 0 }
@@ -388,9 +387,18 @@
 		/* --// override to force 1/8th width grids -- */
 		.yui-gf .yui-u{width:80.2%;}
 		.yui-gf div.first{width:12.3%;}
+
+		@media print {
+			#inner {
+				margin: auto;
+			}
+			@page {
+				size: auto;
+				margin: 0;
+			}
+			a#pdf { display: none; }
+		}
 	</style>
-
-
 </head>
 <body>
 
@@ -422,20 +430,19 @@
 							<h2>Skills</h2>
 						</div>
 						<div class="yui-u">
+								<div class="talent">
+									<h2>Vue.js</h2>
+									<p><h3>Medium</h3></p>
+								</div>
+
+								<div class="talent">
+									<h2>Vuetify</h2>
+									<p><h3>Medium</h3></p>
+								</div>
 
 								<div class="talent">
 									<h2>C#</h2>
 									<p><h3>Junior</h3></p>
-								</div>
-
-								<div class="talent">
-									<h2>PHP 7</h2>
-									<p><h3>Medium</h3></p>
-								</div>
-
-								<div class="talent">
-									<h2>SQL</h2>
-									<p><h3>Medium</h3></p>
 								</div>
 
 						</div>
@@ -447,21 +454,21 @@
 						</div>
 						<div class="yui-u">
 							<ul class="talent">
-								<li>ASP.Net MVC</li>
-								<li>Entity Framework Core</li>
-								<li class="last">ASP.Net Core</li>
-							</ul>
-
-							<ul class="talent">
-								<li>Vue.js</li>
 								<li>HTML 5</li>
-								<li class="last">Laravel</li>
+								<li>JavaScript</li>
+								<li class="last">CSS</li>
 							</ul>
 
 							<ul class="talent">
 								<li>Git</li>
-								<li>Linux</li>
-								<li class="last">JavaScript</li>
+								<li>Vuex</li>
+								<li class="last">PHP 7</li>
+							</ul>
+
+							<ul class="talent">
+								<li>ASP.Net Core</li>
+								<li>ASP.Net MVC</li>
+								<li class="last">Entity Framework Core</li>
 							</ul>
 
 						</div>
@@ -475,19 +482,22 @@
 							<ul class="talent">
 								<li>English - B2</li>
 								<li>MVC</li>
+								<li>PWA</li>
 								<li class="last">REST API</li>
 							</ul>
 
 							<ul class="talent">
 								<li>SCRUM</li>
-								<li>Unit Testing</li>
+								<li>SQL</li>
+								<li>Unit Test</li>
 								<li class="last">Postman</li>
 							</ul>
 
 							<ul class="talent">
-								<li>Python - Basic</li>
-								<li>MS SQL</li>
-								<li class="last">Visual Studio 2017</li>
+								<li>Bootstrap</li>
+								<li>SignalR</li>
+								<li>Linux</li>
+								<li class="last">TypeScript</li>
 							</ul>
 						</div>
 					</div><!--// .yui-gf-->
@@ -499,6 +509,15 @@
 						</div><!--// .yui-u -->
 
 						<div class="yui-u">
+							<div class="job last">
+								<h2>Frontend Vue Developer </h2>
+								<h3 style="color:grey;">Tap-Take</h3>
+								<h4>05/2019 - Now</h4>
+								<ul>
+									<li>Created PWA Application to order food from stores in Vue and Vuetify</li>
+									<li>Created socket-based Application to handle orders from client App in Vue</li>
+								</ul>
+							</div>
 
 							<div class="job last">
 								<h2>Junior Programmer </h2>
@@ -529,6 +548,47 @@
 
 						<div class="yui-u first">
 							<h2>Projects</h2>
+						</div><!--// .yui-u -->
+
+						<div class="yui-u">
+							<div class="job">
+								<h2><strong>Tap-Take</strong></h2>
+								<h4>05/2019 - Now</h4>
+								<h5>
+									<p>TapTake is a shopping platform foccused on small and medium stores. User can make an order and grab it locally or pick the delivery option. It also support item purchase per weight and card payments.</p>
+								</h5>
+							</div>
+						</div><!--// .yui-u -->
+
+
+						<div class="yui-u">
+							<div class="job">
+								<h2><strong>Printy</strong> - 1st place Sheep Your Hack 2</h2>
+								<h4>17/11/2020</h4>
+								<h5>
+									<p>Printy is a web app, which solves the problem of difficult access to printing spots. Printy allows any private person to share his idle printer.</p>
+								</h5>
+							</div>
+						</div><!--// .yui-u -->
+
+						<div class="yui-u">
+							<div class="job">
+								<h2><strong>Naviq</strong></h2>
+								<h4>04/2018 - 12/2018</h4>
+								<h5>
+									<p>Printy is a web app, which solves the problem of difficult access to printing spots. Printy allows any private person to share his idle printer.</p>
+								</h5>
+							</div>
+						</div><!--// .yui-u -->
+
+						<div class="yui-u">
+							<div class="job">
+								<h2><strong>Qumak Managment System</strong></h2>
+								<h4>07/2017 - 03/2018</h4>
+								<h5>
+									<p>QMS was a system for remotely managing customized, linux terminals with virtual desktop. It was able to send messages, update software, establish VNC connections and collect data.</p>
+								</h5>
+							</div>
 						</div><!--// .yui-u -->
 
 						<div class="yui-u">
